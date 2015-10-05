@@ -10,6 +10,8 @@
 
 [Pattern Matching](https://github.com/Zandrr/IntroScala/blob/master/PatternMatching.md)
 
+[Collections](https://github.com/Zandrr/IntroScala/blob/master/Collections.md)
+
 ##Examples:
 
 
