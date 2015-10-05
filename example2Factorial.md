@@ -1,4 +1,4 @@
- # Example 2: Doing factorial in scala
+# Example 2: Doing factorial in scala
 
 
  It's pretty simple really:
