@@ -50,3 +50,71 @@ val v4 = Set(1, 3, 2)
 
 This will create an *immutable* set containing 1,3,2.
 
+
+### Tuples
+
+These are a heterogeneus bag of values that all retain their individual values:
+
+```scala
+
+val t1 = (4,"Alex", 3.14)
+
+val t2 = "Alex" -> 3 // this also works
+
+```
+
+Now how do we access these individual elements?  
+
+
+```scala
+t1._1 = 4
+t1._2 = "Alex"
+t1._3 = 3.14
+```
+
+Although this is weird. We have this odd underscore thing, in addition to the counting starting at 1.
+
+
+```scala
+
+val (x,y,z) = t1
+
+```
+
+This will assign x,y,z to the tuple, respectively.  Weird fact:  We can have up to 22 tuples.  I have no idea what the significance of this is.
+
+
+### Map
+
+Maps are a set of key-value pairs, where all the keys are unique.
+
+```scala
+
+val capitals = Map("CA" -> "Sacramento", "MA" -> "Boston")
+
+
+```
+
+Cool, so we have some key-value pairs.  How do we access them?
+
+```scala
+
+capitals("CA")
+//what if the key doesn't exist?
+capitals("CT") //blows up!
+
+// Let's be a bit safer
+
+capitals.contains("CA") //true
+
+```
+
+We can also use the getOrElse method:
+
+```scala
+
+capitals.getOrElse("CA", "<unknown state>")
+//Sacramento
+
+```
+
